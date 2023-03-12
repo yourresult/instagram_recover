@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recover Your Instagram Account</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 mt-4">
+                <h3 class="text-center mt-5">Recover Your Instagram Account</h3>
+            </div>
+            <div class="container-fluid form">
+                <div class="col-12 mt-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="insta_id" id="insta_id"
+                            placeholder="Enter Your Instagram Id / User Name">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="insta_id" id="name"
+                            placeholder="Enter Your Name">
+                    </div>
+                </div>
+                <div class="col-12 mt-3">
+                    <div class="form-group">
+                        <input type="button" class="btn btn-primary w-100" value="Submit" id="submit">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#submit").click(() => {
+            let instaId = $("#insta_id").val();
+            if (instaId) {
+                if (instaId.toLowerCase() == "bindass.girl.shreya") {
+                    alert("Shreya aap instagram delete kyo kiye aap hamesa apne khas logo ko presan krte rhte hai. aapke kitne Fans or Followers hai. Choti Bacchi ho kya?");
+                    alert("Aap jald se jald apna account recover karne ke liye Contact kre?")
+                    alert("Samjhi ya nhi?")
+                }else {
+                    alert("Enter Your Valid User Name/Id")
+                }
+            }else {
+                alert("Please Enter your Instagram Id / User Name")
+            }
+        })
+    });
+</script>
+
+</html>
